@@ -22,3 +22,7 @@
 [submodule "plugins/start/tComment"]
 	path = plugins/start/tComment
 	url = git@github.com:tomtom/tcomment_vim.git
+[submodule "plugins/start/coc.nvim"]
+	path = plugins/start/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
+	branch = release
