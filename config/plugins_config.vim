@@ -19,3 +19,9 @@ let g:ctrlp_custom_ignore={
   \ 'dir':  '\v[\/](\.git|target|node_modules|dist)$',
   \ 'file': '\.class$'
   \ }
+
+" tComment config
+let g:tcomment#replacements_xml = {
+  \ '-': '&#45',
+  \ '&': '&#38'
+  \ }

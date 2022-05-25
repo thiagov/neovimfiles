@@ -17,7 +17,8 @@
 
 4. **Clone neovim configs:**
   ```
-  git clone --recurse-submodules https://github.com/thiagov/neovimfiles.git ~/.config/nvim
+  git clone https://github.com/thiagov/neovimfiles.git ~/.config/nvim
+  git submodule update --init
   ```
 
 5. **Symlink plugins:**
