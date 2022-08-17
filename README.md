@@ -18,20 +18,31 @@
 4. **Clone neovim configs:**
   ```
   git clone https://github.com/thiagov/neovimfiles.git ~/.config/nvim
-  git submodule update --init
   ```
 
-5. **Symlink plugins:**
-  ```
-  mkdir -p ~/.local/share/nvim/site/pack/plugins
-  ln -s ~/.config/nvim/plugins/start ~/.local/share/nvim/site/pack/plugins/
-  ```
+5. **Install plugins:**
+  Run `:PlugInstall` inside neovim.
 
-6. **Install nodejs >= 12.12 (required for coc.nvim) if don't already have it**
+6. **Install nodejs >= 14.14 (required for coc.nvim) if don't already have it**
 
 7. **Install coc extensions:**
-  ```
-  nvim .
-  :CocInstall coc-tsserver coc-json coc-html coc-css
-  :CocInstall coc-java
-  ```
+
+    * Typescript, html and css support
+    ```
+    nvim .
+    :CocInstall coc-tsserver coc-json coc-html coc-css
+    ```
+
+    * Java support
+    Install Java >= 11
+    ```
+    nvim .
+    :CocInstall coc-java
+    ```
+
+    * Ruby support
+    ```
+    gem install solargraph
+    nvim .
+    :CocInstall coc-solargraph
+    ```

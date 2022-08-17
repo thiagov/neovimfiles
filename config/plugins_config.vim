@@ -25,3 +25,5 @@ let g:tcomment#replacements_xml = {
   \ '-': '&#45',
   \ '&': '&#38'
   \ }
+
+" let g:coc_global_extensions = ['coc-solargraph']
