@@ -10,22 +10,28 @@
   ```
   Change terminal to use one of the installed fonts.
 
-3. **Delete current neovim config:**
+3. Install dependencies for telescope.nvim:
+  ```
+  brew install ripgrep
+  brew install fd
+  ```
+
+4. **Delete current neovim config:**
   ```
   rm -rf ~/.config/nvim
   ```
 
-4. **Clone neovim configs:**
+5. **Clone neovim configs:**
   ```
   git clone https://github.com/thiagov/neovimfiles.git ~/.config/nvim
   ```
 
-5. **Install plugins:**
+6. **Install plugins:**
   Run `:PlugInstall` inside neovim.
 
-6. **Install nodejs >= 14.14 (required for coc.nvim) if don't already have it**
+7. **Install nodejs >= 14.14 (required for coc.nvim) if don't already have it**
 
-7. **Install coc extensions:**
+8. **Install coc extensions:**
 
     * Typescript, html and css support
     ```

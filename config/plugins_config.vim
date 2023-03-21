@@ -10,15 +10,9 @@ let g:airline#extensions#tabline#show_tab_type=0
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeShowBookmarks=1
 
-" ctrlp config
-set mmp=5000 " Max mem pattern. Nedded to search on projects with many files.
-map <F6> :CtrlP<cr>
-let g:ctrlp_dont_split='nerdtree'
-let g:ctrlp_by_filename=1
-let g:ctrlp_custom_ignore={
-  \ 'dir':  '\v[\/](\.git|target|node_modules|dist)$',
-  \ 'file': '\.class$'
-  \ }
+" Telescope config
+nnoremap <F6> <cmd>Telescope find_files<cr>
+nnoremap <F7> <cmd>Telescope live_grep<cr>
 
 " tComment config
 let g:tcomment#replacements_xml = {
