@@ -21,6 +21,7 @@ Plug 'tpope/vim-sensible'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'jiangmiao/auto-pairs'
+" Plug 'tpope/vim-rails'
 
 call plug#end()
 

@@ -36,7 +36,7 @@
     * Typescript, html and css support
     ```
     nvim .
-    :CocInstall coc-tsserver coc-json coc-html coc-css
+    :CocInstall coc-tsserver coc-json coc-html coc-css coc-eslint coc-tslint coc-tslint-plugin
     ```
 
     * Java support
