@@ -45,6 +45,11 @@
     nvim .
     :CocInstall coc-java
     ```
+    * Git support
+    ```
+    nvim .
+    :CocInstall coc-git
+    ```
 
     * Ruby support
     ```
