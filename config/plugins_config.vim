@@ -7,7 +7,16 @@ let g:airline#extensions#tabline#show_splits=0
 let g:airline#extensions#tabline#show_tab_type=0
 
 " NERDTree config
-map <F2> :NERDTreeToggle<cr>
+function MyNerdToggle()
+    if &filetype == 'nerdtree'
+        :NERDTreeToggle
+    else
+        :NERDTreeFind
+    endif
+endfunction
+nnoremap <F2> :call MyNerdToggle()<cr>
+" map <F2> :NERDTreeToggle<cr>
+" map <F1> :NERDTreeFind<cr>
 let NERDTreeShowBookmarks=1
 
 " Telescope config
