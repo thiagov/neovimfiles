@@ -16,22 +16,28 @@
   brew install fd
   ```
 
-4. **Delete current neovim config:**
+4. Install [vim-plug](https://github.com/junegunn/vim-plug):
+  ```
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  ```
+
+5. **Delete current neovim config:**
   ```
   rm -rf ~/.config/nvim
   ```
 
-5. **Clone neovim configs:**
+6. **Clone neovim configs:**
   ```
   git clone https://github.com/thiagov/neovimfiles.git ~/.config/nvim
   ```
 
-6. **Install plugins:**
+7. **Install plugins:**
   Run `:PlugInstall` inside neovim.
 
-7. **Install nodejs >= 14.14 (required for coc.nvim) if don't already have it**
+8. **Install nodejs >= 14.14 (required for coc.nvim) if don't already have it**
 
-8. **Install coc extensions:**
+9. **Install coc extensions:**
 
     * Typescript, html and css support
     ```
@@ -57,3 +63,5 @@
     nvim .
     :CocInstall coc-solargraph
     ```
+10. Authenticate to codeium:
+  Run `:Codeium Auth` inside neovim.
