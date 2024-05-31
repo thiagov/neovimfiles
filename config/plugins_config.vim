@@ -30,3 +30,7 @@ let g:tcomment#replacements_xml = {
   \ }
 
 " let g:coc_global_extensions = ['coc-solargraph']
+
+lua << EOF
+  require("ibl").setup()
+EOF

@@ -22,7 +22,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 " Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-rails'
-Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+Plug 'Exafunction/codeium.vim', { 'branch': 'main', 'on': [] }
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
